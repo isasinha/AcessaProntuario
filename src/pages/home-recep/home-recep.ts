@@ -1,12 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
-// import { AuthService } from '../../app/auth.service';
-import { FirebaseServiceProvider } from '../../providers/firebase-service/firebase-service';
-import { Usuario } from '../../app/Modelo/usuario';
-import * as firebase from 'firebase';
-import { AngularFireDatabase } from '@angular/fire/database';
-import { FormBuilder, Validators } from '@angular/forms';
-import { CadastroRecepPage } from '../cadastro-recep/cadastro-recep';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CadastroUsuarioPage } from '../cadastro-usuario/cadastro-usuario';
 
 @IonicPage()

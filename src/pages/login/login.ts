@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
-// import { AuthService } from '../../app/auth.service';
 import { HomeUserPage } from '../home-user/home-user';
 import { HomeRecepPage } from '../home-recep/home-recep';
 import { RedefinirSenhaPage } from '../redefinir-senha/redefinir-senha';

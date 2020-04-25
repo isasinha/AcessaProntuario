@@ -1,3 +1,5 @@
+// essa página só existe porque inicialmente eu fiz a autenticação do app pelo firebase. Pode ser excluída
+
 import { Injectable } from '@angular/core';
 // import { AngularFireAuth } from '@angular/fire/auth';
 

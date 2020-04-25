@@ -1,3 +1,6 @@
+// Essa página serve para aplicar alguma de css no app inteiro. O que tiver aqui vai esatr no app inteiro a menos
+// que esteja sobrescrito em alguma página 
+
 .activeHighLight{
     background-color: map-get($colors, light);
 }

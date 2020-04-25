@@ -8,7 +8,9 @@
     <h3 style="text-align:center">Informe de {{nomeUsuario}} {{sobrenomeUsuario}}</h3>
     <ion-list>
       selecione a data desejada para mais informações
+      <!-- *nfFor serve para pegar um array criado no back e apresentar os itens em uma lista -->
       <button ion-item *ngFor='let informe of informes' (click)='opcaoEscolhida(informe)'>
+        <!-- neste caso os itens do array foram apresentados em cards. Cada item gera um card conforme os dados abaixo -->
         <ion-card>
           Data/Hora: {{informe.dataHora}}<br/>
           Estado: {{informe.estado}}<br/>

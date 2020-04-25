@@ -1,9 +1,10 @@
+// aqui serão colocadas todas as funções que podem ser utilizadas por vários fontes, para fazer 
+// reaproveitamento de código
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { Usuario } from '../../app/Modelo/usuario';
 import * as firebase from 'firebase';
 import { AlertController, LoadingController } from 'ionic-angular';
-import { Observable } from 'rxjs';
 
 @Injectable()
 export class FirebaseServiceProvider { 

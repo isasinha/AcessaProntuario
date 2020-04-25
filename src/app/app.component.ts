@@ -1,9 +1,15 @@
+// Essa página serve para aplicar alguma lógica no app inteiro. O que tiver aqui vai esatr no app inteiro a menos
+// que esteja sobrescrito em alguma página. É aqui que vão algumas instruções iniciais para quando o app iniciar,
+// antes de carregar qualquer página, como a instrução de qual deve ser a primeira página a abrir, por exemplo
+
+
 import { Component, ViewChild } from '@angular/core';
 import { Platform, Nav } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { AngularFireAuth } from '@angular/fire/auth';
+import { AbstractControlDirective } from '@angular/forms'
 
 @Component({
   templateUrl: 'app.html'

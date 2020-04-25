@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-// import { AngularFireAuth } from '@angular/fire/auth';
-// import { Usuario } from '../../app/Modelo/usuario';
 import * as firebase from 'firebase';
 import { Informe } from '../../app/Modelo/informe';
-import { t } from '@angular/core/src/render3';
 
 @Component({
   selector: 'page-detalhe-informe',

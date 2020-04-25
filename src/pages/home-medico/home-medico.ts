@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Usuario } from '../../app/Modelo/usuario';
 import * as firebase from 'firebase';
 import { InformePage } from '../informe/informe';
@@ -36,6 +36,7 @@ export class HomeMedicoPage {
     public navCtrl: NavController, 
     public navParams: NavParams
     ) {
+      // aqui recebe os valores passados por outra página
       this.nomeUsuario = navParams.get('nome');
       this.loginMedico = navParams.get('loginMedico');
   }
@@ -68,6 +69,8 @@ export class HomeMedicoPage {
   }
 
   atualizarProntuario(){
+    //aqui será aberta a página Informe e será passados para ela alguns valores que só existiam aqui, para que a outra
+    //página também tenha essa informação
     this.navCtrl.push(InformePage,{
       usuarioPaciente: this.user,
       keyPaciente: this.usuarioKey,

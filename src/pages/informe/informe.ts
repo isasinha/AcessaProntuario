@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { Usuario } from '../../app/Modelo/usuario';
-import * as firebase from 'firebase';
 import { FormBuilder, Validators } from '@angular/forms';
 import { HomeMedicoPage } from '../home-medico/home-medico';
 import { FirebaseServiceProvider } from '../../providers/firebase-service/firebase-service';
@@ -83,7 +82,7 @@ export class InformePage {
     this.informe.dataHora = this.dataHora.getDate() + '/' + this.dataHora.getMonth() + '/' + this.dataHora.getFullYear() +
                             '  ' + this.dataHora.getHours() + ':' + this.dataHora.getMinutes();   
     this.informe.usuarioKey = this.usuarioKey;
-      let {estado, horaVisita, prevAlta, dataAlta, outros} = this.prontuarioForm.controls;
+      let {estado, horaVisita, prevAlta} = this.prontuarioForm.controls;
       if(!this.prontuarioForm.valid){
         if(!estado.valid){
           this.erroEstado = true;

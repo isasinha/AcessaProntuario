@@ -10,16 +10,23 @@
 <ion-content padding>
   <br>  
   <div class='container'>
+    <!-- o click é para informar qual função chamar se clicar no link -->
     <ion-icon name='arrow-round-back' large class='back' (click)="voltar()"></ion-icon>
     <h3 style="text-align:center">Cadastrar novo Médico</h3> 
+    <!-- [formGroup] é para indicar que tudo o que eu colocar entre a abertura e fechamento da tag <form> é para ser 
+      validado no form criado no back -->
     <form padding [formGroup]='usuarioForm' novalidate class="list">
       <ion-item>
         <ion-label floating>
           <ion-icon name='person'></ion-icon>  
           Nome*
         </ion-label>
+        <!-- [(ngModel)] é para informar quem é esse campo lá no back, neste caso ele é nome do usuário.
+        formControlName é para informar quem é esse campo no form criado no back -->
         <ion-input type="text" [(ngModel)]="usuario.nome" formControlName="nome"></ion-input>
       </ion-item>
+      <!-- *ngIf é uma condição. Se satisfazer a condição, o item será exibido, senão, não -->
+      <!-- {{xyz}} é para trazer o que consta na variável criada lá no back-->
       <h6 *ngIf='erroNome' class='error'>{{messageNome}}</h6>
       <ion-item>
         <ion-label floating>

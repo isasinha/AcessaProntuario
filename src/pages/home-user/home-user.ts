@@ -1,11 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-// import { AngularFireAuth } from '@angular/fire/auth';
-// import { Usuario } from '../../app/Modelo/usuario';
 import * as firebase from 'firebase';
 import { Informe } from '../../app/Modelo/informe';
 import { DetalheInformePage } from '../detalhe-informe/detalhe-informe';
-//import { DetalheInformePage } from '../detalhe-informe/detalhe-informe';
 
 @Component({
   selector: 'page-home-user',

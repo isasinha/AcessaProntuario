@@ -5,8 +5,6 @@
 
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
-// import { AuthService } from '../../app/auth.service';
-
 import { FirebaseServiceProvider } from '../../providers/firebase-service/firebase-service';
 import { Usuario } from '../../app/Modelo/usuario';
 import * as firebase from 'firebase';

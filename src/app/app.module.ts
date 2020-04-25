@@ -1,3 +1,6 @@
+// essa página controla os componentes, bibliotecas. Se eu criar uma nova página ela deve ser cadastrada aqui para que 
+// o sistema todo saiba que ela existe
+
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
@@ -18,10 +21,8 @@ import { CadastroMedicoPage } from '../pages/cadastro-medico/cadastro-medico';
 import { CadastroRecepPage } from '../pages/cadastro-recep/cadastro-recep';
 import { FirebaseServiceProvider } from '../providers/firebase-service/firebase-service';
 import { HomeRecepPageModule } from '../pages/home-recep/home-recep.module';
-// import { LoginPage } from '../pages/login/login';
 import { LoginPageModule } from '../pages/login/login.module';
 import { HomeMedicoPage } from '../pages/home-medico/home-medico';
-import { HomeRecepPage } from '../pages/home-recep/home-recep';
 import { HomeAdmPage } from '../pages/home-adm/home-adm';
 import { InformePage } from '../pages/informe/informe';
 import { DetalheInformePage } from '../pages/detalhe-informe/detalhe-informe';
@@ -41,15 +42,15 @@ import { DetalheInformePage } from '../pages/detalhe-informe/detalhe-informe';
   declarations: [
     MyApp, 
     HomeUserPage,
-    HomeMedicoPage,
-    HomeAdmPage,
+    //HomeMedicoPage,
+    //HomeAdmPage,
     //HomeRecepPage,
     // LoginPage,
-    RedefinirSenhaPage,
-    CadastroMedicoPage,
-    CadastroUsuarioPage,
-    CadastroRecepPage,
-    InformePage,
+    //RedefinirSenhaPage,
+    //CadastroMedicoPage,
+    //CadastroUsuarioPage,
+    //CadastroRecepPage,
+    //InformePage,
     DetalheInformePage
     
   ],
