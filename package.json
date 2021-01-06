@@ -34,7 +34,7 @@
     "@ionic/storage": "2.2.0",
     "@sendgrid/mail": "^6.4.0",
     "@types/axios": "^0.14.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "brmasker-ionic-3": "^1.6.3",
     "com-badrit-base64": "0.2.0",
     "cordova-android": "8.1.0",
