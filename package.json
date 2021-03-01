@@ -47,7 +47,7 @@
     "ngx-mask": "^8.1.6",
     "rxjs": "5.5.11",
     "sw-toolbox": "3.6.0",
-    "three": "^0.110.0",
+    "three": "^0.125.0",
     "zone.js": "0.8.29"
   },
   "devDependencies": {
